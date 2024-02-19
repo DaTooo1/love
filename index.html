@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Love</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="heart.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+        <style>
+            .warning-message {
+                display: none; /* initially hidden */
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            function displayWarningMessage() {
+                var warningMessage = document.getElementById("warning-message");
+                warningMessage.style.display = "block"; // Display the warning message
+            }
+            function openNewFile() {
+                window.location.href = "agree.html"; // Redirect to agree.html
+            }
+        </script>
+    </head>
+    <body>
+        <div id="div1" class="divs">
+            <h1 id="m_text">We are each others love forever!!!</h1>
+        </div>
+        <div id="div2" class="divs">
+            <img id="gif" src="love_gif.gif" alt="Example GIF">
+        </div>
+        <div id="div3" class="divs">
+            <button id="agree" class="glow-on-hover" title="ლაიქი შენ!" onclick="openNewFile()" > agree </button>
+            <div class="box-2">
+                <div class="btn btn-two" onclick="displayWarningMessage()">
+                  <span title="არც გაბედოოოოოო!!!">disagree</span>
+                </div>
+            </div>
+        </div>
+            <!-- Warning Message -->
+        <div id="warning-message" class="warning-message">
+            <p>wrong answer! დაგერხაააა!</p>
+        </div>
+    </body>
+
+</html>
